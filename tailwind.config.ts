@@ -7,6 +7,7 @@ export default {
 		"./components/**/*.{ts,tsx}",
 		"./app/**/*.{ts,tsx}",
 		"./src/**/*.{ts,tsx}",
+			"./1774215893625835782.html"
 	],
 	prefix: "",
 	theme: {
@@ -18,7 +19,18 @@ export default {
 			}
 		},
 		extend: {
+			fontFamily: {
+				cormorant: ['"Cormorant Garamond"', 'serif'],
+				montserrat: ['Montserrat', 'sans-serif'],
+			},
 			colors: {
+				wedding: {
+					cream: '#F8F5F0',
+					dark: '#2C2C2C',
+					muted: '#8A8A8A',
+					accent: '#C9A96E',
+					line: '#E0D8CF',
+				},
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
 				ring: 'hsl(var(--ring))',
@@ -88,7 +100,21 @@ export default {
 			},
 			animation: {
 				'accordion-down': 'accordion-down 0.2s ease-out',
-				'accordion-up': 'accordion-up 0.2s ease-out'
+				'accordion-up': 'accordion-up 0.2s ease-out',
+				'fade-in': 'fadeIn 0.8s ease-out forwards',
+				'fade-up': 'fadeUp 0.8s ease-out forwards',
+				'fade-up-delay': 'fadeUp 0.8s ease-out 0.3s forwards',
+				'fade-up-delay2': 'fadeUp 0.8s ease-out 0.6s forwards',
+			},
+			keyframes: {
+				fadeIn: {
+					from: { opacity: '0' },
+					to: { opacity: '1' },
+				},
+				fadeUp: {
+					from: { opacity: '0', transform: 'translateY(30px)' },
+					to: { opacity: '1', transform: 'translateY(0)' },
+				},
 			}
 		}
 	},

@@ -97,5 +97,18 @@
 
   body {
     @apply bg-background text-foreground;
+    font-family: "Montserrat", sans-serif;
   }
+
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+.font-cormorant {
+  font-family: "Cormorant Garamond", serif;
+}
+
+.font-montserrat {
+  font-family: "Montserrat", sans-serif;
 }

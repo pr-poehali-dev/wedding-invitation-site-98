@@ -26,6 +26,7 @@ export default {
 				italiana: ['Italiana', 'serif'],
 				dancing: ['"Dancing Script"', 'cursive'],
 				pinyon: ['"Pinyon Script"', 'cursive'],
+				caveat: ['Caveat', 'cursive'],
 			},
 			colors: {
 				wedding: {

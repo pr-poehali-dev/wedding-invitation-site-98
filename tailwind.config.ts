@@ -22,6 +22,7 @@ export default {
 			fontFamily: {
 				cormorant: ['"Cormorant Garamond"', 'serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
+				vibes: ['"Great Vibes"', 'cursive'],
 			},
 			colors: {
 				wedding: {

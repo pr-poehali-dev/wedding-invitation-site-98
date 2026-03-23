@@ -76,23 +76,23 @@ function Hero() {
       style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23c9a96e\" fill-opacity=\"0.04\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')" }}
     >
       <div className="text-center animate-fade-in opacity-0">
-        <div className="font-cormorant text-2xl md:text-3xl tracking-[0.4em] text-wedding-dark/60 mb-3">
-          THE WEDDING DAY
+        <div className="font-vibes text-4xl md:text-5xl text-wedding-dark/60 mb-3">
+          The Wedding Day
         </div>
 
         <div className="font-montserrat uppercase tracking-[0.5em] text-xs text-wedding-muted mb-10">
           Приглашаем вас на нашу свадьбу
         </div>
 
-        <div className="font-cormorant font-light text-7xl md:text-9xl text-wedding-dark leading-none mb-4">
+        <div className="font-vibes text-8xl md:text-[10rem] text-wedding-dark leading-none mb-2">
           Ирина
         </div>
 
-        <div className="font-cormorant italic text-4xl md:text-5xl text-wedding-accent mb-4">
+        <div className="font-vibes text-5xl md:text-6xl text-wedding-accent mb-2">
           &amp;
         </div>
 
-        <div className="font-cormorant font-light text-7xl md:text-9xl text-wedding-dark leading-none mb-12">
+        <div className="font-vibes text-8xl md:text-[10rem] text-wedding-dark leading-none mb-12">
           Андрей
         </div>
 

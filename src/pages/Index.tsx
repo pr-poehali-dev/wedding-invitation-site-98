@@ -84,15 +84,15 @@ function Hero() {
           Приглашаем вас на нашу свадьбу
         </div>
 
-        <div className="font-italiana text-8xl md:text-[10rem] text-wedding-dark leading-none mb-2">
+        <div className="font-dancing text-8xl md:text-[10rem] text-wedding-dark leading-none mb-2">
           Ирина
         </div>
 
-        <div className="font-italiana text-5xl md:text-6xl text-wedding-accent mb-2">
+        <div className="font-dancing text-5xl md:text-6xl text-wedding-accent mb-2">
           &amp;
         </div>
 
-        <div className="font-italiana text-8xl md:text-[10rem] text-wedding-dark leading-none mb-12">
+        <div className="font-dancing text-8xl md:text-[10rem] text-wedding-dark leading-none mb-12">
           Андрей
         </div>
 

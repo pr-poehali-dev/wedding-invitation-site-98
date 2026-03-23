@@ -24,6 +24,7 @@ export default {
 				montserrat: ['Montserrat', 'sans-serif'],
 				vibes: ['"Great Vibes"', 'cursive'],
 				italiana: ['Italiana', 'serif'],
+				dancing: ['"Dancing Script"', 'cursive'],
 			},
 			colors: {
 				wedding: {

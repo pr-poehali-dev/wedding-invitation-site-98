@@ -27,6 +27,7 @@ export default {
 				dancing: ['"Dancing Script"', 'cursive'],
 				pinyon: ['"Pinyon Script"', 'cursive'],
 				caveat: ['Caveat', 'cursive'],
+				marck: ['"Marck Script"', 'cursive'],
 			},
 			colors: {
 				wedding: {

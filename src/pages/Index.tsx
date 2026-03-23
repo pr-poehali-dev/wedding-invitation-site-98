@@ -80,15 +80,15 @@ function Hero() {
           The Wedding Day
         </div>
 
-        <div className="font-caveat text-8xl md:text-[10rem] text-wedding-dark leading-none mb-2">
+        <div className="font-marck text-8xl md:text-[10rem] text-wedding-dark leading-none mb-2">
           Ирина
         </div>
 
-        <div className="font-caveat text-5xl md:text-6xl text-wedding-accent mb-2">
+        <div className="font-marck text-5xl md:text-6xl text-wedding-accent mb-2">
           &amp;
         </div>
 
-        <div className="font-caveat text-8xl md:text-[10rem] text-wedding-dark leading-none mb-12">
+        <div className="font-marck text-8xl md:text-[10rem] text-wedding-dark leading-none mb-12">
           Андрей
         </div>
 

@@ -99,11 +99,7 @@ function Hero() {
         <div className="w-px h-16 bg-wedding-line mx-auto mb-10" />
 
         <div className="font-cormorant text-2xl md:text-3xl text-wedding-dark/70 tracking-wider mb-2">
-          20 · 06 · 2026
-        </div>
-
-        <div className="font-montserrat text-xs uppercase tracking-[0.4em] text-wedding-muted mt-4">
-          Курск · Банкетный зал «Вместе»
+          20 · 06 · 2026 &nbsp;·&nbsp; 17:00
         </div>
       </div>
 

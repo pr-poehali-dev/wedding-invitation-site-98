@@ -21,7 +21,7 @@ const TIMELINE = [
   { time: "00:00", label: "The End", desc: "Завершение вечера" },
 ];
 
-const WEDDING_DATE = new Date(2025, 8, 6); // September 6, 2025
+const WEDDING_DATE = new Date(2026, 5, 20); // June 20, 2026
 
 function useInView(threshold = 0.15) {
   const ref = useRef<HTMLDivElement>(null);
@@ -81,7 +81,7 @@ function Hero() {
         </div>
 
         <div className="font-cormorant font-light text-7xl md:text-9xl text-wedding-dark leading-none mb-4">
-          Алексей
+          Ирина
         </div>
 
         <div className="font-cormorant italic text-4xl md:text-5xl text-wedding-accent mb-4">
@@ -89,13 +89,13 @@ function Hero() {
         </div>
 
         <div className="font-cormorant font-light text-7xl md:text-9xl text-wedding-dark leading-none mb-12">
-          Мария
+          Андрей
         </div>
 
         <div className="w-px h-16 bg-wedding-line mx-auto mb-10" />
 
         <div className="font-cormorant text-2xl md:text-3xl text-wedding-dark/70 tracking-wider mb-2">
-          06 · 09 · 2025
+          20 · 06 · 2026
         </div>
 
         <div className="font-montserrat text-xs uppercase tracking-[0.4em] text-wedding-muted mt-4">
@@ -140,7 +140,7 @@ function Nav() {
       }`}
     >
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="font-cormorant italic text-wedding-dark text-xl">А &amp; М</div>
+        <div className="font-cormorant italic text-wedding-dark text-xl">И &amp; А</div>
 
         {/* Desktop */}
         <div className="hidden md:flex gap-8">
@@ -589,9 +589,9 @@ function Contacts() {
 function Footer() {
   return (
     <footer className="bg-wedding-cream border-t border-wedding-line py-12 text-center">
-      <div className="font-cormorant italic text-4xl text-wedding-dark mb-2">А &amp; М</div>
+      <div className="font-cormorant italic text-4xl text-wedding-dark mb-2">И &amp; А</div>
       <div className="font-montserrat text-[10px] uppercase tracking-[0.4em] text-wedding-muted mb-6">
-        06 · 09 · 2025
+        20 · 06 · 2026
       </div>
       <div className="font-cormorant italic text-wedding-muted text-lg">
         С любовью ждём вас

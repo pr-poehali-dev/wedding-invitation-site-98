@@ -2,6 +2,8 @@ import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
 const COUPLE_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/7ed42c51-3654-469c-8b89-7323f20a814a.jpg";
+const VENUE_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/3becfec5-6ca5-4733-ba45-10182078f435.JPG";
+const DETAILS_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0f-eddd700d6be1/bucket/2da8db0f-3794-41b4-8d71-398c500a4b63.jpg";
 
 const GALLERY_IMAGES = [
   "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/32b8f47a-6623-4794-8e55-e4a7a343f236.JPG",

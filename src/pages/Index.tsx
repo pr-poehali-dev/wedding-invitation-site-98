@@ -80,10 +80,6 @@ function Hero() {
           The Wedding Day
         </div>
 
-        <div className="font-montserrat uppercase tracking-[0.5em] text-xs text-wedding-muted mb-10">
-          Приглашаем вас на нашу свадьбу
-        </div>
-
         <div className="font-pinyon text-8xl md:text-[10rem] text-wedding-dark leading-none mb-2">
           Ирина
         </div>

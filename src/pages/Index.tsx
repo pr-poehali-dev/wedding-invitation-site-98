@@ -186,42 +186,27 @@ function Story() {
         className={`transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
         <div className="text-center mb-16">
-          <SectionLabel>Наша история</SectionLabel>
-          <ScriptTitle>История любви</ScriptTitle>
+          <ScriptTitle>История нашей любви</ScriptTitle>
           <Divider />
         </div>
 
         <div className="grid md:grid-cols-2 gap-16 items-center">
-          <div className="space-y-6">
-            <div className="border-l-2 border-wedding-accent pl-6">
-              <div className="font-montserrat text-xs uppercase tracking-[0.2em] text-wedding-accent mb-2">2019</div>
-              <div className="font-cormorant text-2xl text-wedding-dark mb-2">Первая встреча</div>
-              <p className="font-montserrat text-sm text-wedding-muted leading-relaxed">
-                Мы встретились совершенно случайно на одном из городских мероприятий. Один взгляд — и мир стал другим.
-              </p>
-            </div>
-
-            <div className="border-l-2 border-wedding-line pl-6">
-              <div className="font-montserrat text-xs uppercase tracking-[0.2em] text-wedding-muted mb-2">2021</div>
-              <div className="font-cormorant text-2xl text-wedding-dark mb-2">Первое путешествие</div>
-              <p className="font-montserrat text-sm text-wedding-muted leading-relaxed">
-                Вместе мы открывали новые места, узнавали друг друга и понимали — это навсегда.
-              </p>
-            </div>
-
-            <div className="border-l-2 border-wedding-accent pl-6">
-              <div className="font-montserrat text-xs uppercase tracking-[0.2em] text-wedding-accent mb-2">2024</div>
-              <div className="font-cormorant text-2xl text-wedding-dark mb-2">Помолвка</div>
-              <p className="font-montserrat text-sm text-wedding-muted leading-relaxed">
-                Под звёздным небом прозвучал главный вопрос. Ответ был — да.
-              </p>
-            </div>
+          <div className="space-y-6 font-montserrat text-sm text-wedding-muted leading-relaxed">
+            <p>
+              17 ноября 2020 года я, устав от «странных» ровесников и загадочных мужчин постарше, открыла Badoo с мыслью: «Нужен кто-то помладше, просто поболтать». А он просто скучал и свайпал. Бум — мэтч! Чат закипел, как чайник на плите.
+            </p>
+            <p>
+              Он пришёл с огромным букетом моих любимых роз — не букет, а целый розарий в руках. Я смотрела и думала: «Военный, высокий, с цветами — мечта сбылась!» Но подвох подкрался незаметно: оказалось, с таким «трофеем» за границу теперь только с сестрой или подругами, потому что Андрей — как ценный груз, нельзя вывозить из страны 😄
+            </p>
+            <p>
+              И вот мы здесь, спустя годы — с теми же розами в сердце, тысячами километров за спиной и планами на будущее, которые уже не помещаются в один чемодан. Приглашаем вас на нашу свадьбу, чтобы вместе посмеяться над тем, как один случайный свайп перевернул две жизни, выпить за настоящую любовь и танцевать под «Матадору» до утра.
+            </p>
           </div>
 
           <div className="relative">
             <div className="absolute -top-4 -left-4 w-full h-full border border-wedding-line" />
             <img
-              src={COUPLE_IMAGE}
+              src="https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/7ed42c51-3654-469c-8b89-7323f20a814a.jpg"
               alt="Пара"
               className="relative w-full aspect-[3/4] object-cover"
             />

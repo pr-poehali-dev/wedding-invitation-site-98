@@ -1,17 +1,14 @@
 import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
-const COUPLE_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/files/086436ff-2b93-4b96-8348-438764198fcd.jpg";
-const VENUE_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/files/ea4e93e0-1192-40cc-9834-368bf23000a7.jpg";
-const DETAILS_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/files/c7041fc8-8894-4832-b9f8-960edf65f251.jpg";
+const COUPLE_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/7ed42c51-3654-469c-8b89-7323f20a814a.jpg";
 
 const GALLERY_IMAGES = [
-  COUPLE_IMAGE,
-  VENUE_IMAGE,
-  DETAILS_IMAGE,
-  COUPLE_IMAGE,
-  VENUE_IMAGE,
-  DETAILS_IMAGE,
+  "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/32b8f47a-6623-4794-8e55-e4a7a343f236.JPG",
+  "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/1be26469-6168-408b-97e3-996d4aa37c8f.JPG",
+  "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/2c03f796-7369-4dc4-b8f8-85c6e1884ca2.JPG",
+  "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/3becfec5-6ca5-4733-ba45-10182078f435.JPG",
+  "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/2da8db0f-3794-41b4-8d71-398c500a4b63.jpg",
 ];
 
 const TIMELINE = [
@@ -232,28 +229,87 @@ function Gallery() {
         className={`transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
         <div className="text-center mb-16">
-          <SectionLabel>Фотогалерея</SectionLabel>
           <ScriptTitle>Наши моменты</ScriptTitle>
           <Divider />
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3">
-          {GALLERY_IMAGES.map((src, i) => (
-            <div
-              key={i}
-              className={`overflow-hidden cursor-pointer group ${i === 0 ? "row-span-2" : ""}`}
-              onClick={() => setSelected(src)}
-              style={{ transitionDelay: `${i * 80}ms` }}
-            >
-              <img
-                src={src}
-                alt=""
-                className={`w-full object-cover transition-transform duration-700 group-hover:scale-105 ${
-                  i === 0 ? "h-full min-h-[300px]" : "h-48 md:h-56"
-                }`}
-              />
-            </div>
-          ))}
+        {/* Коллаж: большое фото слева + 2 справа сверху + 2 снизу на всю ширину */}
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 md:gap-3">
+          {/* Большое — занимает 2 строки слева */}
+          <div
+            className="row-span-2 overflow-hidden cursor-pointer group"
+            onClick={() => setSelected(GALLERY_IMAGES[0])}
+          >
+            <img
+              src={GALLERY_IMAGES[0]}
+              alt=""
+              className="w-full h-full min-h-[320px] object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          {/* Правый верх */}
+          <div
+            className="overflow-hidden cursor-pointer group"
+            onClick={() => setSelected(GALLERY_IMAGES[1])}
+          >
+            <img
+              src={GALLERY_IMAGES[1]}
+              alt=""
+              className="w-full h-48 md:h-56 object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          {/* Правый верх 2 — только на md+ */}
+          <div
+            className="hidden md:block overflow-hidden cursor-pointer group"
+            onClick={() => setSelected(GALLERY_IMAGES[2])}
+          >
+            <img
+              src={GALLERY_IMAGES[2]}
+              alt=""
+              className="w-full h-48 md:h-56 object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          {/* Правый низ */}
+          <div
+            className="overflow-hidden cursor-pointer group"
+            onClick={() => setSelected(GALLERY_IMAGES[3])}
+          >
+            <img
+              src={GALLERY_IMAGES[3]}
+              alt=""
+              className="w-full h-48 md:h-56 object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+
+          {/* Правый низ 2 — только на md+ */}
+          <div
+            className="hidden md:block overflow-hidden cursor-pointer group"
+            onClick={() => setSelected(GALLERY_IMAGES[4])}
+          >
+            <img
+              src={GALLERY_IMAGES[4]}
+              alt=""
+              className="w-full h-48 md:h-56 object-cover transition-transform duration-700 group-hover:scale-105"
+            />
+          </div>
+        </div>
+
+        {/* На мобайле показываем 3 и 4 снизу */}
+        <div className="grid grid-cols-2 gap-2 mt-2 md:hidden">
+          <div
+            className="overflow-hidden cursor-pointer group"
+            onClick={() => setSelected(GALLERY_IMAGES[2])}
+          >
+            <img src={GALLERY_IMAGES[2]} alt="" className="w-full h-40 object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
+          <div
+            className="overflow-hidden cursor-pointer group"
+            onClick={() => setSelected(GALLERY_IMAGES[4])}
+          >
+            <img src={GALLERY_IMAGES[4]} alt="" className="w-full h-40 object-cover transition-transform duration-700 group-hover:scale-105" />
+          </div>
         </div>
       </div>
 

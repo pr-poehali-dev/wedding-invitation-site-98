@@ -23,6 +23,7 @@ export default {
 				cormorant: ['"Cormorant Garamond"', 'serif'],
 				montserrat: ['Montserrat', 'sans-serif'],
 				vibes: ['"Great Vibes"', 'cursive'],
+				italiana: ['Italiana', 'serif'],
 			},
 			colors: {
 				wedding: {

@@ -25,6 +25,7 @@ export default {
 				vibes: ['"Great Vibes"', 'cursive'],
 				italiana: ['Italiana', 'serif'],
 				dancing: ['"Dancing Script"', 'cursive'],
+				pinyon: ['"Pinyon Script"', 'cursive'],
 			},
 			colors: {
 				wedding: {

@@ -28,6 +28,7 @@ export default {
 				pinyon: ['"Pinyon Script"', 'cursive'],
 				caveat: ['Caveat', 'cursive'],
 				marck: ['"Marck Script"', 'cursive'],
+				ruslan: ['"Ruslan Display"', 'serif'],
 			},
 			colors: {
 				wedding: {

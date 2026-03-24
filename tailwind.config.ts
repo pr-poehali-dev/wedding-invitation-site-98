@@ -29,6 +29,7 @@ export default {
 				caveat: ['Caveat', 'cursive'],
 				marck: ['"Marck Script"', 'cursive'],
 				ruslan: ['"Ruslan Display"', 'serif'],
+				corinthia: ['Corinthia', 'cursive'],
 			},
 			colors: {
 				wedding: {

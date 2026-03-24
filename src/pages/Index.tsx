@@ -79,7 +79,7 @@ function Hero() {
           The Wedding Day
         </div>
 
-        <div className="font-pinyon text-9xl md:text-[12rem] text-wedding-dark leading-none mb-2">
+        <div className="font-vibes text-9xl md:text-[12rem] text-wedding-dark leading-none mb-2">
           Irina
         </div>
 
@@ -87,7 +87,7 @@ function Hero() {
           &amp;
         </div>
 
-        <div className="font-pinyon text-9xl md:text-[12rem] text-wedding-dark leading-none mb-12">
+        <div className="font-vibes text-9xl md:text-[12rem] text-wedding-dark leading-none mb-12">
           Andrew
         </div>
 
@@ -102,7 +102,6 @@ function Hero() {
         <Icon name="ChevronDown" size={20} className="text-wedding-muted" />
       </div>
 
-      <div className="absolute top-8 left-8 font-cormorant italic text-wedding-accent/40 text-6xl select-none">✦</div>
       <div className="absolute bottom-20 right-8 font-cormorant italic text-wedding-accent/30 text-4xl select-none">✦</div>
     </section>
   );
@@ -135,7 +134,7 @@ function Nav() {
       }`}
     >
       <div className="max-w-5xl mx-auto px-6 h-16 flex items-center justify-between">
-        <div className="font-cormorant italic text-wedding-dark text-xl">И &amp; А</div>
+        <div />
 
         {/* Desktop */}
         <div className="hidden md:flex gap-8">

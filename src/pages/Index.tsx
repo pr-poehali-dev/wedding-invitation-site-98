@@ -254,28 +254,28 @@ function Story() {
           </div>
 
           {/* Photo stack: polaroid style */}
-          <div className="relative flex justify-center" style={{ paddingBottom: "2rem", paddingLeft: "1rem" }}>
-            {/* Back polaroid — peeking from left, black photo inside */}
+          <div className="relative flex justify-center" style={{ paddingBottom: "2rem" }}>
+            {/* Back polaroid — slightly peeking from left */}
             <div
               className="absolute bg-white shadow-md"
               style={{
-                width: "78%",
-                padding: "10px 10px 36px 10px",
-                transform: "rotate(-6deg) translate(-32px, 12px)",
+                width: "76%",
+                padding: "10px 10px 56px 10px",
+                transform: "rotate(-4deg) translate(-18px, 8px)",
                 zIndex: 0,
                 left: 0,
               }}
             >
-              <div className="w-full bg-black" style={{ aspectRatio: "3/4" }} />
+              <div className="w-full bg-black" style={{ aspectRatio: "1/1" }} />
             </div>
 
             {/* Front polaroid */}
             <div
               className="relative bg-white shadow-lg"
               style={{
-                width: "78%",
-                padding: "10px 10px 48px 10px",
-                transform: "rotate(1.5deg)",
+                width: "76%",
+                padding: "10px 10px 64px 10px",
+                transform: "rotate(1deg)",
                 zIndex: 1,
               }}
             >
@@ -283,7 +283,7 @@ function Story() {
                 src={COUPLE_IMAGE}
                 alt="Андрей и Ирина"
                 className="w-full object-cover grayscale"
-                style={{ aspectRatio: "3/4", display: "block" }}
+                style={{ aspectRatio: "1/1", display: "block" }}
               />
             </div>
           </div>

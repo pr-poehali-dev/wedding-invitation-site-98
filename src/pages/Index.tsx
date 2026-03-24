@@ -2,6 +2,7 @@ import { useState, useEffect, useRef } from "react";
 import Icon from "@/components/ui/icon";
 
 const COUPLE_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/7ed42c51-3654-469c-8b89-7323f20a814a.jpg";
+const FAMILY_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/11939517-ef86-481e-9ec0-e285b1f46b0f.JPG";
 const VENUE_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/3becfec5-6ca5-4733-ba45-10182078f435.JPG";
 const DETAILS_IMAGE = "https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0f-eddd700d6be1/bucket/2da8db0f-3794-41b4-8d71-398c500a4b63.jpg";
 
@@ -75,17 +76,17 @@ function Hero() {
       style={{ backgroundImage: "url('data:image/svg+xml,%3Csvg width=\"60\" height=\"60\" viewBox=\"0 0 60 60\" xmlns=\"http://www.w3.org/2000/svg\"%3E%3Cg fill=\"none\" fill-rule=\"evenodd\"%3E%3Cg fill=\"%23c9a96e\" fill-opacity=\"0.04\"%3E%3Cpath d=\"M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z\"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')" }}
     >
       <div className="text-center animate-fade-in opacity-0">
-        <div className="font-montserrat uppercase tracking-[0.6em] text-2xl md:text-4xl text-wedding-dark mb-6">
+        <div className="font-montserrat uppercase tracking-[0.6em] text-3xl md:text-5xl text-wedding-dark mb-8">
           The Wedding Day
         </div>
 
-        <div className="w-48 h-px bg-wedding-dark/30 mx-auto mb-6" />
+        <div className="w-48 h-px bg-wedding-dark/30 mx-auto mb-8" />
 
-        <div className="font-corinthia text-7xl md:text-9xl text-wedding-dark leading-none mb-12">
+        <div className="font-corinthia text-[7rem] md:text-[11rem] text-wedding-dark leading-none mb-14">
           Andrew &amp; Irina
         </div>
 
-        <div className="font-cormorant text-2xl md:text-3xl text-wedding-dark/70 tracking-wider mb-2">
+        <div className="font-montserrat uppercase tracking-[0.5em] text-lg md:text-2xl text-wedding-dark/70 mb-2">
           20 · 06 · 2026 &nbsp;·&nbsp; 17:00
         </div>
       </div>
@@ -165,6 +166,52 @@ function Nav() {
   );
 }
 
+// ---- FAMILY SECTION ----
+function FamilySection() {
+  const { ref, inView } = useInView();
+
+  return (
+    <section
+      id="family"
+      className={`relative min-h-[80vh] flex items-stretch overflow-hidden transition-all duration-1000 ${inView ? "opacity-100" : "opacity-0"}`}
+      ref={ref}
+    >
+      {/* Left: photo */}
+      <div className="w-1/2 md:w-[45%] flex-shrink-0 relative">
+        <img
+          src={FAMILY_IMAGE}
+          alt="Андрей и Ирина"
+          className="w-full h-full object-cover object-top"
+          style={{ minHeight: "80vh" }}
+        />
+      </div>
+
+      {/* Center: vertical script text */}
+      <div className="absolute left-[45%] top-0 bottom-0 flex items-center justify-center z-10" style={{ transform: "translateX(-50%)" }}>
+        <div
+          className="font-corinthia text-5xl text-wedding-dark/60 leading-none select-none"
+          style={{ writingMode: "vertical-rl", textOrientation: "mixed", letterSpacing: "0.05em" }}
+        >
+          In the merry and back
+        </div>
+      </div>
+
+      {/* Right: text content */}
+      <div className="flex-1 bg-[#f0edea] flex items-center pl-16 pr-10 md:pr-16">
+        <div className="max-w-sm">
+          <div className="font-corinthia text-7xl md:text-8xl text-wedding-dark leading-none mb-2">Мы</div>
+          <div className="font-montserrat uppercase tracking-[0.25em] text-2xl md:text-3xl text-wedding-dark font-light leading-tight mb-8">
+            Официально<br />станем семьей
+          </div>
+          <p className="font-montserrat text-sm text-wedding-muted leading-relaxed">
+            Если вы сейчас читаете этот текст, значит вы находитесь в числе приглашённых на нашу свадьбу, и совсем скоро мы увидимся на нашем торжестве!
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+}
+
 // ---- STORY ----
 function Story() {
   const { ref, inView } = useInView();
@@ -175,33 +222,57 @@ function Story() {
         ref={ref}
         className={`transition-all duration-1000 ${inView ? "opacity-100 translate-y-0" : "opacity-0 translate-y-8"}`}
       >
-        <div className="text-center mb-16">
-          <ScriptTitle>История нашей любви</ScriptTitle>
-          <Divider />
+        <div className="mb-16">
+          <div className="font-montserrat uppercase tracking-[0.25em] text-4xl md:text-5xl text-wedding-dark font-light leading-tight mb-1">
+            Наша история
+          </div>
+          <div className="font-corinthia text-6xl md:text-7xl text-wedding-dark leading-none">
+            любви
+          </div>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-16 items-center">
+        <div className="grid md:grid-cols-2 gap-16 items-start">
           <div className="space-y-6 font-montserrat text-sm text-wedding-muted leading-relaxed">
+            <p>
+              <strong className="text-wedding-dark font-semibold">Свайп в судьбу</strong>
+            </p>
             <p>
               17 ноября 2020 года я, устав от «странных» ровесников и загадочных мужчин постарше, открыла Badoo с мыслью: «Нужен кто-то помладше, просто поболтать». А он просто скучал и свайпал. Бум — мэтч! Чат закипел, как чайник на плите.
             </p>
             <p>
-              Он пришёл с огромным букетом моих любимых роз — не букет, а целый розарий в руках. Я смотрела и думала: «Военный, высокий, с цветами — мечта сбылась!» Но подвох подкрался незаметно: оказалось, с таким «трофеем» за границу теперь только с сестрой или подругами, потому что Андрей — как ценный груз, нельзя вывозить из страны 😄
+              <strong className="text-wedding-dark font-semibold">Первая встреча с фейерверком</strong>
+            </p>
+            <p>
+              Он пришёл с огромным букетом моих любимых роз — не букет, а целый розарий в руках. Я смотрела и думала: «Военный, высокий, с цветами — мечта сбылась!»
+            </p>
+            <p>
+              Но подвох подкрался незаметно: оказалось, с таким «трофеем» за границу теперь только с сестрой или подругами, потому что Андрей — как ценный груз, нельзя вывозить из страны 😄
             </p>
             <p>
               И вот мы здесь, спустя годы — с теми же розами в сердце, тысячами километров за спиной и планами на будущее, которые уже не помещаются в один чемодан. Приглашаем вас на нашу свадьбу, чтобы вместе посмеяться над тем, как один случайный свайп перевернул две жизни, выпить за настоящую любовь и танцевать под «Матадору» до утра.
             </p>
           </div>
 
-          <div className="relative">
-            <div className="absolute -top-4 -left-4 w-full h-full border border-wedding-line" />
-            <img
-              src="https://cdn.poehali.dev/projects/3f2f6e56-d3e2-49b0-9b0f-eddd700d6be1/bucket/7ed42c51-3654-469c-8b89-7323f20a814a.jpg"
-              alt="Пара"
-              className="relative w-full aspect-[3/4] object-cover"
-            />
-            <div className="absolute -bottom-6 -right-6 w-24 h-24 bg-wedding-cream flex items-center justify-center">
-              <span className="font-cormorant italic text-wedding-accent text-4xl">♡</span>
+          {/* Photo stack: two photos, second peeking behind */}
+          <div className="relative flex justify-center">
+            {/* Back photo — rotated, offset */}
+            <div
+              className="absolute w-[85%] aspect-[3/4] bg-wedding-line overflow-hidden"
+              style={{ transform: "rotate(5deg) translate(24px, -16px)", zIndex: 0 }}
+            >
+              <img
+                src={FAMILY_IMAGE}
+                alt=""
+                className="w-full h-full object-cover object-top grayscale"
+              />
+            </div>
+            {/* Front photo */}
+            <div className="relative w-[85%] aspect-[3/4] overflow-hidden" style={{ zIndex: 1 }}>
+              <img
+                src={COUPLE_IMAGE}
+                alt="Андрей и Ирина"
+                className="w-full h-full object-cover grayscale"
+              />
             </div>
           </div>
         </div>
@@ -635,6 +706,7 @@ export default function Index() {
     <div className="bg-white">
       <Nav />
       <Hero />
+      <FamilySection />
       <Story />
       <Gallery />
       <DateSection />

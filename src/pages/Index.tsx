@@ -253,25 +253,37 @@ function Story() {
             </p>
           </div>
 
-          {/* Photo stack: two photos, second peeking behind */}
-          <div className="relative flex justify-center">
-            {/* Back photo — rotated, offset */}
+          {/* Photo stack: polaroid style */}
+          <div className="relative flex justify-center" style={{ paddingBottom: "2rem", paddingLeft: "1rem" }}>
+            {/* Back polaroid — peeking from left, black photo inside */}
             <div
-              className="absolute w-[85%] aspect-[3/4] bg-wedding-line overflow-hidden"
-              style={{ transform: "rotate(5deg) translate(24px, -16px)", zIndex: 0 }}
+              className="absolute bg-white shadow-md"
+              style={{
+                width: "78%",
+                padding: "10px 10px 36px 10px",
+                transform: "rotate(-6deg) translate(-32px, 12px)",
+                zIndex: 0,
+                left: 0,
+              }}
             >
-              <img
-                src={FAMILY_IMAGE}
-                alt=""
-                className="w-full h-full object-cover object-top grayscale"
-              />
+              <div className="w-full bg-black" style={{ aspectRatio: "3/4" }} />
             </div>
-            {/* Front photo */}
-            <div className="relative w-[85%] aspect-[3/4] overflow-hidden" style={{ zIndex: 1 }}>
+
+            {/* Front polaroid */}
+            <div
+              className="relative bg-white shadow-lg"
+              style={{
+                width: "78%",
+                padding: "10px 10px 48px 10px",
+                transform: "rotate(1.5deg)",
+                zIndex: 1,
+              }}
+            >
               <img
                 src={COUPLE_IMAGE}
                 alt="Андрей и Ирина"
-                className="w-full h-full object-cover grayscale"
+                className="w-full object-cover grayscale"
+                style={{ aspectRatio: "3/4", display: "block" }}
               />
             </div>
           </div>

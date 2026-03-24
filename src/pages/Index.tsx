@@ -83,7 +83,7 @@ function Hero() {
         <div className="w-48 h-px bg-wedding-dark/30 mx-auto mb-8" />
 
         <div className="font-corinthia text-[7rem] md:text-[11rem] text-wedding-dark leading-none mb-14">
-          Andrew &amp; Irina
+          Andrew <span className="font-montserrat not-italic text-[3rem] md:text-[5rem] align-middle">&amp;</span> Irina
         </div>
 
         <div className="font-montserrat uppercase tracking-[0.5em] text-lg md:text-2xl text-wedding-dark/70 mb-2">

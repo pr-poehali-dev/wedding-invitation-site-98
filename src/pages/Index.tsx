@@ -79,16 +79,16 @@ function Hero() {
           The Wedding Day
         </div>
 
-        <div className="font-ruslan text-8xl md:text-[10rem] text-wedding-dark leading-none mb-2">
-          Ирина
+        <div className="font-pinyon text-9xl md:text-[12rem] text-wedding-dark leading-none mb-2">
+          Irina
         </div>
 
-        <div className="font-ruslan text-5xl md:text-6xl text-wedding-accent mb-2">
+        <div className="font-cormorant italic text-4xl md:text-5xl text-wedding-accent mb-2">
           &amp;
         </div>
 
-        <div className="font-ruslan text-8xl md:text-[10rem] text-wedding-dark leading-none mb-12">
-          Андрей
+        <div className="font-pinyon text-9xl md:text-[12rem] text-wedding-dark leading-none mb-12">
+          Andrew
         </div>
 
         <div className="w-px h-16 bg-wedding-line mx-auto mb-10" />
